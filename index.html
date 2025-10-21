@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="simple.js">
+</head>
+<body>
+
+
+
+  <!-- ===== Promo / Alert Bar ===== -->
+<div id="promoBar" class="promo" role="alert" aria-live="polite">
+  <span class="promo__text">
+    Sign Up and GET 20% OFF for your first Order.
+  </span>
+  <i style=" cursor: pointer;" class="fa-solid fa-square-xmark close_mark"
+
+onclick="xmark()"></i>
+
+  <button id="promoClose" class="promo__close" aria-label="Close banner" title="Close">
+    <!-- X icon (SVG) -->
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+      <path d="M18.3 5.7a1 1 0 0 0-1.4-1.4L12 9.17 7.1 4.3a1 1 0 1 0-1.4 1.4L10.83 12l-5.13 5.1a1 1 0 1 0 1.4 1.4L12 14.83l4.9 4.87a1 1 0 0 0 1.4-1.4L13.17 12l5.13-5.1z" fill="currentColor"/>
+    </svg>
+  </button>
+</div>
+    <div class="heading">
+
+    <div class="first">
+        <h1>NOSTRA</h1>
+    </div>
+
+    <div class="two">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="new collection.html">New Collection</a>
+        <a>Most Wanted</a>
+    </div>
+
+    </div>
+
+      <section class="hero">
+    <!-- background slides -->
+    <div class="slide active" style="background-image:url('image/clasesmainpage.jpg')"></div>
+    <div class="slide" style="background-image:url('image/im1.jpg')"></div>
+    <div class="slide" style="background-image:url('image/im1.jpg')"></div>
+
+    <!-- dark overlay -->
+    <div class="overlay"></div>
+
+    <!-- fixed text content -->
+    <div class="content">
+    
+      <h1>Level up your style with our</h1>
+      <p>Summer Collections</p>
+      <a href="#" class="btn">Shop Now →</a>
+    </div>
+
+    <!-- nav buttons -->
+    <button class="nav-btn left">&#10094;</button>
+    <button class="nav-btn right">&#10095;</button>
+  </section>
+
+
+  
+  <!-- Brands Section -->
+  <section class="brands">
+    <h2>Brands</h2>
+    <div class="brands-logos">
+      <div><img src="image/Adidas-Logo.png"></div>
+      <div><img src="image/Puma-Logo.png"></div>
+      <div><img src="image/Levis-Logo-1969-2003.png"></div>
+      <div><img src="image/OIP (1).jpeg"></div>
+      <div><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Twitch_logo.svg"><span>TWITCH</span></div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience">
+    <h2>We Provide Best Customer Experiences</h2>
+    <p>We ensure that our customer have the best shopping experience</p>
+    <div class="experience-cards">
+      <div class="card">
+        <span>😊</span>
+        <h3>Original Products</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+      </div>
+      <div class="card">
+        <span>✔</span>
+        <h3>Original Products</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+      </div>
+      <div class="card">
+        <span>😊</span>
+        <h3>Original Products</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+      </div>
+      <div class="card">
+        <span>✔</span>
+        <h3>Original Products</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- 🌸 Products Section -->
+    <h1 class="most">Most Wanted</h1>
+  <section class="products">
+    <div class="card">
+      <img src="image/OIP (2).jpeg" alt="Dress 1" />
+      <div class="card-content">
+        <h3>Aloha Shirt</h3>
+        <p>₹1,499</p>
+        <button class="btn" onclick="addToCart('Pink Floral Dress')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/OIP (4).jpeg" alt="Dress 2" />
+      <div class="card-content">
+        <h3>Casual Shoes</h3>
+        <p>₹1,899</p>
+        <button class="btn" onclick="addToCart('Blue Summer Dress')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/OIP (3).jpeg" alt="Dress 3" />
+      <div class="card-content">
+        <h3>formal pants</h3>
+        <p>₹2,499</p>
+        <button class="btn" onclick="addToCart('Elegant White Gown')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="section">
+    <div class="image-container">
+      <img src="image/how-to-dress-sharp-in-your-30s-for-men-style-inspiration.jpg" alt="image">
+    
+    </div>
+    <div class="text-container">
+      <h1>"Style in your 30s isn’t about dressing older — it’s about dressing smarter.
+You know yourself better, and your clothes should reflect that self-assurance"</h1>
+      <button>Order now</button>
+    </div>
+  </div>
+
+  
+ <!--footer-->
+ 
+        <div class="footer">
+            <h1>Nostra</h1>
+            <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest @ 2023 Nostra.co</p>
+
+        </div>
+
+
+
+    
+</body>
+</html>

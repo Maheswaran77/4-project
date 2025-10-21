@@ -1,0 +1,441 @@
+body{
+  font-family: "Gabarito", sans-serif;
+}
+
+
+/* ===== Promo / Alert Bar styles ===== */
+  .promo{
+    position: sticky;         /* stays at the top while scrolling */
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px 16px;
+    background: #121212;      /* dark like your screenshot */
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .2px;
+    text-align: center;
+    transition: transform .28s ease, opacity .28s ease;
+  }
+  .promo__text{
+    pointer-events: none;     /* clicks go to the close btn on the right */
+  }
+  .promo__close{
+    margin-left: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffffcc;
+    cursor: pointer;
+  }
+  .promo__close:hover,
+  .promo__close:focus{
+    background: #ffffff1a;
+    color: #fff;
+    outline: none;
+  }
+  /* hide animation */
+  .promo--hide{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+
+.heading{
+  display: flex;
+  justify-content: space-between;
+   padding: 5px;
+  margin: 2px;
+}
+
+.two{
+   display: flex;
+   gap: 50px;
+   align-items: center;
+   justify-content: center;
+}
+.two a{
+    background-color:transparent;
+    color:black;
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: black  1px;
+}
+
+
+.two a:hover{
+    transition: 2s;
+    background-color:black;
+    color: white;
+    border: orange solid 1px;
+}
+
+    body{
+      margin:0;
+      font-family: "Poppins", sans-serif;
+      background:#f4f4f4;
+    }
+
+    .hero{
+      position:relative;
+      width:100%;
+      height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      overflow:hidden;
+    }
+
+    .slide{
+      position:absolute;
+      inset:0;
+      background-size:cover;
+      background-position:center;
+      opacity:0;
+      transition: opacity 1s ease-in-out;
+    }
+    .slide.active{
+      opacity:1;
+      z-index:1;
+    }
+
+    .overlay{
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.55);
+      z-index:2;
+    }
+
+    .content{
+      position:relative;
+      z-index:3;
+      padding:20px;
+    }
+
+    .content h1{
+      font-size:48px;
+      font-weight:800;
+      margin-bottom:12px;
+    }
+
+    .content p{
+      font-size:20px;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 28px;
+      border-radius:30px;
+      background:white;
+      color:#333;
+      font-weight:600;
+      text-decoration:none;
+      transition:all 0.3s ease;
+    }
+    .btn:hover{
+      background:#333;
+      color:white;
+    }
+
+    /* nav buttons */
+    .nav-btn{
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      width:50px; height:50px;
+      border-radius:50%;
+      background:red;
+      color:white;
+      border:none;
+      font-size:24px;
+      cursor:pointer;
+      z-index:4;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .nav-btn.left{ left:20px; }
+    .nav-btn.right{ right:20px; }
+
+
+    
+    /* Brands Section */
+    .brands {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .brands h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .brands-logos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+    .brands-logos div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 3px;
+    }
+    .brands-logos img {
+      height: 40px;
+      opacity: 0.8;
+      transition: 0.3s;
+      padding-top: 3px;
+    }
+    .brands-logos img:hover {
+      opacity: 1;
+    }
+
+    /* Experience Section */
+    .experience {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .experience h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    .experience p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .experience-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 0 40px;
+    }
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .card span {
+      font-size: 24px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* New Arrivals */
+    
+.new-arrivals {
+  padding: 50px 8%;
+}
+
+.new-arrivals h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.arrivals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  position: relative;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.shop-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+  background-color: #000;
+   color: white;
+}
+
+    .new-arrivals h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+
+        /* 🌸 Product Grid */
+    .products {
+      padding: 60px 5%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit:contain;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin-bottom: 5px;
+      font-size: 1.2em;
+    }
+
+    .card-content p {
+      color:white;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background:black;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: blue;
+    }
+
+
+.most{
+  display: inline-block;
+}    
+ .section {
+      display: flex;
+      background-color:black; /* neon green */
+      margin: 50px auto;
+      max-width: 1000px;
+      border-radius: 10px;
+      overflow: hidden;
+      flex-wrap: nowrap;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container {
+      position: relative;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    
+    .text-container {
+      flex: 1;
+      padding: 40px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .text-container h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .text-container p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .text-container button {
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    .text-container button:hover {
+      background-color: blue;
+    }
+
+
+    .footer{
+    background-color:black;
+    color:white;
+    padding: 30px;
+}
+
